@@ -63,6 +63,7 @@ internal class Share(
             if (subject != null) {
                 putExtra(Intent.EXTRA_SUBJECT, subject)
             }
+            addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         }
         // If we dont want the result we use the old 'createChooser'
         val chooserIntent =
